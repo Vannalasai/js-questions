@@ -1,0 +1,41 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: #fff;
+  height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Custom Button */
+.btn-custom {
+  background-color: #6610f2;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #520dc2;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind CSS Example</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Header Section -->
+<header class="bg-blue-600 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">My Tailwind CSS Webpage</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-blue-500 text-white py-20 px-6 text-center">
+    <h2 class="text-4xl font-semibold mb-4">Welcome to My Website</h2>
+    <p class="text-lg mb-8">Tailwind CSS makes styling fast and easy!</p>
+    <a href="#" class="bg-white text-blue-500 py-2 px-6 rounded-full font-semibold hover:bg-gray-100">Learn More</a>
+</section>
+
+<!-- Main Content Section -->
+<main class="container mx-auto p-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Responsive Design</h3>
+            <p class="text-gray-700">Learn how to make your website look great on any device using Tailwind's responsive utilities.</p>
+            <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Read more</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Flexbox Layout</h3>
+            <p class="text-gray-700">Master Flexbox to create flexible and responsive layouts with ease using Tailwind CSS.</p>
+            <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Read more</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Grid Layout</h3>
+            <p class="text-gray-700">Use Tailwind's grid system to design complex and responsive layouts with minimal effort.</p>
+            <a href="#" class="text-blue-600 mt-4 inline-block hover:underline">Read more</a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2024 My Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
