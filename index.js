@@ -18,9 +18,10 @@ getWeatherButton.addEventListener("click", function() {
     forecastContainer.innerHTML = ""; // Clear any previous forecast
 
     // Fetch data from the weather API
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=India&limit=5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=7e999e00cb623676105620aca76f3059`)
         .then(response => response.json())
         .then(data => {
+          console.log(data)
             // Hide the spinner
             loadingSpinner.style.display = 'none';
 
