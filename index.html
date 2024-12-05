@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Webpage Example</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Optional: Add an external animation library like Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Webpage</h1>
-  </header>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
 
-  <section class="content">
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
-  </section>
+    <main>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="getWeatherBtn">Get Weather</button>
+        
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="spinner" style="display: none;"></div>
 
-  <footer>
-    <p>© 2024 My Webpage</p>
-  </footer>
+        <!-- Weather Forecast -->
+        <div id="forecastContainer"></div>
+    </main>
 
-  <script>
-    // GSAP animation on page load
-    gsap.from(".box", { duration: 1, opacity: 0, scale: 0, stagger: 0.3 });
+    <footer>
+        <p>Powered by OpenWeatherMap</p>
+    </footer>
 
-    // Animation on hover
-    document.querySelectorAll('.box').forEach(box => {
-        box.addEventListener('mouseenter', () => {
-            gsap.to(box, { scale: 1.2, duration: 0.3 });
-        });
-        box.addEventListener('mouseleave', () => {
-            gsap.to(box, { scale: 1, duration: 0.3 });
-        });
-    });
-  </script>
+    <script src="index.js"></script>
 </body>
 </html>
